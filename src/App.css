@@ -1,0 +1,110 @@
+/* Main container styling */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center; /* Ensure content is centered */
+}
+
+/* Styling for logo */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animation for the logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply animation if motion preference is allowed */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Styling for the card */
+.card {
+  padding: 1em;
+}
+
+/* Styling for docs */
+.read-the-docs {
+  color:black;
+}
+
+/* Styling for navigation links */
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+a:hover {
+  background-color:greenyellow;
+
+}
+
+/* Styling for the page headers */
+h2 {
+  color: black;
+  font-size: 24px;
+  margin-top: 20px;
+  text-align: center; /* Center the text horizontally */
+}
+
+/* Body styling without flexbox */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Ensure that the div after the main div is also centered */
+div + div {
+  text-align: center; /* Make sure the content inside is centered */
+  width: 100%; /* Optional: Ensure the content doesn't shrink */
+}
+p, h1, h2,ul {
+  color: black; /* Dark Gray for all text elements */
+}
+li{
+  padding-top: 10px;
+}
+ul{
+  background-color: aqua;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+#bt{
+  padding-left: 10px;
+  margin-left: 10px;
+}
+#bt:hover{
+  background-color:red;
+}
+input{
+  color:white;
+}
+
